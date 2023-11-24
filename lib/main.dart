@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
-
-import 'package:ui_components/components/dropdownButton.dart';
+import 'package:ui_components/components/badge.dart';
+import 'package:ui_components/components/chatBubble.dart';
+import 'package:ui_components/components/imageStack.dart';
+import 'package:ui_components/components/neumorphic_Button.dart';
+import 'package:ui_components/components/popupMenu.dart';
+import 'package:ui_components/components/segmented_Button.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +26,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const DropdownButtonExample(),
+      home: const SingleSegmentedButton(),
     );
   }
 }
