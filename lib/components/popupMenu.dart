@@ -14,27 +14,31 @@ class _CustomPopupMenuState extends State<CustomPopupMenu> {
   SampleItem? selectedMenu;
   @override
   Widget build(BuildContext context) {
-    return PopupMenuButton(
-      initialValue: selectedMenu,
-      onSelected: (SampleItem item) {
-        setState(() {
-          selectedMenu = item;
-        });
-      },
-      itemBuilder: (BuildContext context) => <PopupMenuEntry<SampleItem>>[
-        const PopupMenuItem<SampleItem>(
-          value: SampleItem.itemOne,
-          child: Text('Item 1'),
+    return Scaffold(
+      body: Center(
+        child: PopupMenuButton(
+          initialValue: selectedMenu,
+          onSelected: (SampleItem item) {
+            setState(() {
+              selectedMenu = item;
+            });
+          },
+          itemBuilder: (BuildContext context) => <PopupMenuEntry<SampleItem>>[
+            const PopupMenuItem<SampleItem>(
+              value: SampleItem.itemOne,
+              child: Text('Item 1'),
+            ),
+            const PopupMenuItem<SampleItem>(
+              value: SampleItem.itemTwo,
+              child: Text('Item 2'),
+            ),
+            const PopupMenuItem<SampleItem>(
+              value: SampleItem.itemThree,
+              child: Text('Item 3'),
+            ),
+          ],
         ),
-        const PopupMenuItem<SampleItem>(
-          value: SampleItem.itemTwo,
-          child: Text('Item 2'),
-        ),
-        const PopupMenuItem<SampleItem>(
-          value: SampleItem.itemThree,
-          child: Text('Item 3'),
-        ),
-      ],
+      ),
     );
   }
 }
