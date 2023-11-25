@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
+import 'package:ui_components/components/glass_MorphicCreditcard.dart';
+
+import 'package:ui_components/components/glowing_Button.dart';
+import 'package:ui_components/components/gradiantCreditCard.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,6 +24,8 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: LiquidCircularProgressIndicator());
+        home: GradientCreditCard(
+            onTopRightButtonClicked: () {},
+            cardIcon: const Icon(Icons.favorite)));
   }
 }
