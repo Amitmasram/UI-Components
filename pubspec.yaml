@@ -37,6 +37,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   badges: ^3.1.2
   neumorphic_button: ^0.0.1+2
+  easy_stepper: ^0.8.2
+  liquid_progress_indicator: ^0.4.0
+  syncfusion_flutter_charts: ^23.2.4
  
 
 dev_dependencies:

@@ -20,8 +20,8 @@ class _CustomCarouselFB2State extends State<CustomCarouselFB2> {
     CardFb1(
         text: "Explore",
         imageUrl:
-            "https://firebasestorage.googleapis.com/v0/b/flutterbricks-public.appspot.com/o/illustrations%2Fundraw_Designer_re_5v95%201.png?alt=media&token=5d053bd8-d0ea-4635-abb6-52d87539b7ec",
-        subtitle: "+30 books",
+            "https://tse1.mm.bing.net/th?id=OIP.4T2vdX3N-DpoOSOqVSyhOwHaEK&pid=Api&P=0&h=180",
+        subtitle: "+30 BMW cars",
         onPressed: () {}),
     CardFb1(
         text: "Explore",

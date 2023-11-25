@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_components/components/neumorphic_Bar.dart';
-
-import 'package:ui_components/likeButton.dart';
+import 'package:liquid_progress_indicator/liquid_progress_indicator.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,6 +21,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const NeumorphicBar(width: 20, height: 50, value: 5));
+        home: LiquidCircularProgressIndicator());
   }
 }

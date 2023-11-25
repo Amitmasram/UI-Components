@@ -18,26 +18,31 @@ class NeumorphicBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final innerContainerWidth = width * 0.95;
     final innerContainerHeight = height * value * 0.96;
-    return Column(
-      mainAxisSize: MainAxisSize.min,
-      children: <Widget>[
-        SizedBox(
-          height: height * 1.01,
-          width: width.toDouble() / 4,
-          child: Stack(
-            children: <Widget>[
-              DugContainer(
-                width: width,
-                height: height,
+    return Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.all(100.0),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            SizedBox(
+              height: height * 1.01,
+              width: width.toDouble() / 4,
+              child: Stack(
+                children: <Widget>[
+                  DugContainer(
+                    width: width,
+                    height: height,
+                  ),
+                  InnerContainer(
+                      width: innerContainerWidth,
+                      height: innerContainerHeight,
+                      color: color ?? Colors.purple),
+                ],
               ),
-              InnerContainer(
-                  width: innerContainerWidth,
-                  height: innerContainerHeight,
-                  color: color ?? Colors.white),
-            ],
-          ),
+            ),
+          ],
         ),
-      ],
+      ),
     );
   }
 }
