@@ -46,7 +46,7 @@ class GradientCreditCard extends StatelessWidget {
                     child: TextButton(
                       child: const Text(
                         'Credit Card',
-                        style: TextStyle(fontSize: 15),
+                        style: TextStyle(fontSize: 13, color: Colors.white),
                       ),
                       onPressed: () {
                         onTopRightButtonClicked();

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ui_components/components/glass_MorphicCreditcard.dart';
 
-import 'package:ui_components/components/glowing_Button.dart';
-import 'package:ui_components/components/gradiantCreditCard.dart';
+import 'components/tapbar/tapbarandtapbarView.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,8 +22,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: GradientCreditCard(
-            onTopRightButtonClicked: () {},
-            cardIcon: const Icon(Icons.favorite)));
+        home: TabBarAndTabViews());
   }
 }
