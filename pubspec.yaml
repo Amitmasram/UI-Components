@@ -38,12 +38,17 @@ dependencies:
   badges: ^3.1.2
   neumorphic_button: ^0.0.1+2
   easy_stepper: ^0.8.2
-  liquid_progress_indicator: ^0.4.0
+  
   syncfusion_flutter_charts: ^23.2.4
   loading_animation_widget: ^1.2.0+4
   flutter_rating_bar: ^4.0.1
   dots_indicator: ^3.0.0
   flutter_glow: ^0.3.0
+  carousel_slider: ^4.2.1
+  get: ^4.6.6
+  shimmer: ^3.0.0
+  animated_text_kit: ^4.2.2
+  liquid_progress_indicator_v2: ^0.5.0
  
 
 dev_dependencies:

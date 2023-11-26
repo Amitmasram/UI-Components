@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'components/tapbar/tapbarandtapbarView.dart';
+import 'package:ui_components/components/indicator/liquidProgressIndicator.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,6 +21,6 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: TabBarAndTabViews());
+        home: const CustomLiquidProgressIndicator());
   }
 }
